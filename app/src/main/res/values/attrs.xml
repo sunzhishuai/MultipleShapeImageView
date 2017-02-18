@@ -15,9 +15,7 @@
 
     <declare-styleable name="multiple_shape_image_view">
         <attr name="multi_image"/>
-        <attr name="shaper" />
         <attr name="image_scale_type"/>
-        <attr name="multi_view_bg"/>
     </declare-styleable>
 
     <attr name="verify_bg" format="reference"/>
