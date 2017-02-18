@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.reliance.multipleshapeimageview.MainActivity">
+
+    <!--<com.reliance.multipleshapeimageview.MultipleShapeImageView-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="200dp"-->
+    <!--app:multi_image="@mipmap/ic_launcher"-->
+    <!--app:image_scale_type="fillXF"-->
+    <!--app:multi_view_bg="@mipmap/timg"-->
+    <!--app:shaper="circle" />-->
+    <!--<com.reliance.multipleshapeimageview.PaintModel-->
+    <!--android:layout_width="match_parent"-->
+    <!--&lt;!&ndash;android:layout_height="match_parent" />&ndash;&gt;-->
+    <!--<com.reliance.multipleshapeimageview.ShaderView-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="300dp" />-->
+    <com.reliance.multipleshapeimageview.VerifyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:verify_height="120dp"
+        app:verify_with="120dp"
+        app:verify_bg="@mipmap/timg" />
+</RelativeLayout>

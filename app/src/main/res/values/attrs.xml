@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="multi_image" format="reference"/>
+    <attr name="multi_view_bg" format="reference"/>
+    <attr name="shaper" format="enum">
+        <enum name="circle" value="10"/>
+        <enum name = "triangle" value="11"/>
+        <enum name="rectangle" value="12"/>
+        <enum name="rhombus" value="13"/>
+    </attr>
+    <attr name="image_scale_type" format="enum">
+        <enum name="fillXF" value="14" />
+        <enum name="center" value="15"/>
+    </attr>
+
+    <declare-styleable name="multiple_shape_image_view">
+        <attr name="multi_image"/>
+        <attr name="shaper" />
+        <attr name="image_scale_type"/>
+        <attr name="multi_view_bg"/>
+    </declare-styleable>
+
+    <attr name="verify_bg" format="reference"/>
+    <attr name="verify_with" format="dimension"/>
+    <attr name="verify_height" format="dimension"/>
+    <declare-styleable name="VerifyView">
+        <attr name="verify_bg"/>
+        <attr name="verify_with"/>
+        <attr name="verify_height"/>
+    </declare-styleable>
+
+</resources>
