@@ -18,7 +18,7 @@ import android.view.View;
  * E-mail itzhishuaisun@sina.com
  */
 
-public class MultipleShapedImageView extends View {
+public class MultipleShapedImageView extends View implements View.OnAttachStateChangeListener{
     private final int FILLXY = 14;
     private final int CENTER = 15;
 
@@ -65,10 +65,22 @@ public class MultipleShapedImageView extends View {
     }
 
     private void init() {
+        addOnAttachStateChangeListener(this);
         mMakeBitmap = new Paint();
         mMakeBitmap.setAntiAlias(true);
         mDrawPick = new Paint();
         mDrawPick.setAntiAlias(true);
+    }
+
+    @Override
+    public void onViewAttachedToWindow(View view) {
+
+
+    }
+
+    @Override
+    public void onViewDetachedFromWindow(View view) {
+
     }
 
     private class MultioleShaperAttrs {
@@ -122,6 +134,8 @@ public class MultipleShapedImageView extends View {
     private Bitmap getCaptureBitmapByPath() {
         int height = mAttrs.src.getHeight();
         int width = mAttrs.src.getWidth();
+        Log.e("bitmapwid",height+"");
+        Log.e("width",width+"");
         Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         int r = (width < height ? width : height) / 2;
@@ -134,6 +148,7 @@ public class MultipleShapedImageView extends View {
         }
         mMakeBitmap.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
         canvas.drawBitmap(mAttrs.src, 0, 0, mMakeBitmap);
+        mMakeBitmap.setXfermode(null);
         return bitmap;
     }
 

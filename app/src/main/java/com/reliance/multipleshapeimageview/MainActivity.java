@@ -2,8 +2,9 @@ package com.reliance.multipleshapeimageview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private MultipleShapedImageView mView1
     ,mView2,mView3,mView4,mView5;
@@ -13,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mView1 = (MultipleShapedImageView) findViewById(R.id.msv_shper1);
-        mView1.setMultipleShaper(new CircleShaper());
         mView2 = (MultipleShapedImageView) findViewById(R.id.msv_shper2);
         mView2.setMultipleShaper(new RoundedRectangleShaper());
         mView3 = (MultipleShapedImageView) findViewById(R.id.msv_shper3);
@@ -22,8 +22,11 @@ public class MainActivity extends AppCompatActivity {
         mView4.setMultipleShaper(new FivePointedStar());
         mView5 = (MultipleShapedImageView) findViewById(R.id.msv_shper5);
         mView5.setMultipleShaper(new TriangleShaper());
-
     }
 
 
+    @Override
+    public void onClick(View view) {
+        mView1.setMultipleShaper(new CircleShaper());
+    }
 }
