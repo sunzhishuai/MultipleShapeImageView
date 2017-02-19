@@ -7,7 +7,7 @@ import android.graphics.Path;
  * E-mail itzhishuaisun@sina.com
  */
 
-public class CircleShaper implements MultipleShapeImageView.MultipleShaper {
+public class CircleShaper implements MultipleShapedImageView.MultipleShaper {
     @Override
     public Path makeDrawShaperPath(int drawSpaceWidth, int drawSpaceHeight) {
         Path path = new Path();

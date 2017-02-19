@@ -3,7 +3,6 @@ package com.reliance.multipleshapeimageview;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -19,7 +18,7 @@ import android.view.View;
  * E-mail itzhishuaisun@sina.com
  */
 
-public class MultipleShapeImageView extends View {
+public class MultipleShapedImageView extends View {
     private final int FILLXY = 14;
     private final int CENTER = 15;
 
@@ -30,17 +29,17 @@ public class MultipleShapeImageView extends View {
     private Paint mMakeBitmap;
     private Paint mDrawPick;
 
-    public MultipleShapeImageView(Context context) {
+    public MultipleShapedImageView(Context context) {
         this(context, null);
 
     }
 
-    public MultipleShapeImageView(Context context, AttributeSet attrs) {
+    public MultipleShapedImageView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
 
     }
 
-    public MultipleShapeImageView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public MultipleShapedImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         getAttrs(context, attrs, defStyleAttr);
 

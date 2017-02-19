@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <com.reliance.multipleshapeimageview.MultipleShapeImageView
+        <com.reliance.multipleshapeimageview.MultipleShapedImageView
             android:layout_gravity="center_horizontal"
             android:id="@+id/msv_shper1"
             android:layout_width="100dp"
@@ -27,7 +27,7 @@
             app:image_scale_type="fillXF"
             app:multi_image="@mipmap/timg" />
 
-        <com.reliance.multipleshapeimageview.MultipleShapeImageView
+        <com.reliance.multipleshapeimageview.MultipleShapedImageView
             android:layout_gravity="center_horizontal"
             android:id="@+id/msv_shper2"
             android:layout_width="100dp"
@@ -35,7 +35,7 @@
             app:image_scale_type="fillXF"
             app:multi_image="@mipmap/timg" />
 
-        <com.reliance.multipleshapeimageview.MultipleShapeImageView
+        <com.reliance.multipleshapeimageview.MultipleShapedImageView
             android:layout_gravity="center_horizontal"
             android:id="@+id/msv_shper3"
             android:layout_width="100dp"
@@ -43,7 +43,7 @@
             app:image_scale_type="fillXF"
             app:multi_image="@mipmap/timg" />
 
-        <com.reliance.multipleshapeimageview.MultipleShapeImageView
+        <com.reliance.multipleshapeimageview.MultipleShapedImageView
             android:layout_gravity="center_horizontal"
             android:id="@+id/msv_shper4"
             android:layout_width="100dp"
@@ -52,7 +52,7 @@
             app:multi_image="@mipmap/timg" />
         app:multi_image="@mipmap/timg" />
 
-        <com.reliance.multipleshapeimageview.MultipleShapeImageView
+        <com.reliance.multipleshapeimageview.MultipleShapedImageView
             android:layout_gravity="center_horizontal"
             android:id="@+id/msv_shper5"
             android:layout_width="100dp"

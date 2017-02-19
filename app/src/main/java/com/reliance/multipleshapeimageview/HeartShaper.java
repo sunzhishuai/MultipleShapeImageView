@@ -7,7 +7,7 @@ import android.graphics.Path;
  * E-mail itzhishuaisun@sina.com
  */
 
-public class HeartShaped implements MultipleShapeImageView.MultipleShaper {
+public class HeartShaper implements MultipleShapedImageView.MultipleShaper {
     @Override
     public Path makeDrawShaperPath(int drawSpaceWidth, int drawSpaceHeight) {
         // 绘制心形

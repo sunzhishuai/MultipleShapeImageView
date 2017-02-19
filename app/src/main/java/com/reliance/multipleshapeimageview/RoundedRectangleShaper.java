@@ -1,7 +1,6 @@
 package com.reliance.multipleshapeimageview;
 
 import android.graphics.Path;
-import android.graphics.PointF;
 import android.graphics.RectF;
 
 /**
@@ -9,7 +8,7 @@ import android.graphics.RectF;
  * E-mail itzhishuaisun@sina.com
  */
 
-public class RoundedRectangleShaper implements MultipleShapeImageView.MultipleShaper {
+public class RoundedRectangleShaper implements MultipleShapedImageView.MultipleShaper {
     @Override
     public Path makeDrawShaperPath(int drawSpaceWidth, int drawSpaceHeight) {
         int r = 40;

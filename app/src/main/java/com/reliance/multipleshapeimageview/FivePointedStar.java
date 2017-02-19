@@ -7,7 +7,7 @@ import android.graphics.Path;
  * E-mail itzhishuaisun@sina.com
  */
 
-public class FivePointedStar implements MultipleShapeImageView.MultipleShaper {
+public class FivePointedStar implements MultipleShapedImageView.MultipleShaper {
     @Override
     public Path makeDrawShaperPath(int drawSpaceWidth, int drawSpaceHeight) {
         int radius = (drawSpaceWidth<drawSpaceHeight?drawSpaceWidth:drawSpaceHeight)/2;
