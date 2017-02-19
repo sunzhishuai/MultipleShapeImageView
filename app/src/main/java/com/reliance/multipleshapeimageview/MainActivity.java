@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mView4.setMultipleShaper(new FivePointedStar());
         mView5 = (MultipleShapedImageView) findViewById(R.id.msv_shper5);
         mView5.setMultipleShaper(new TriangleShaper());
+
     }
 
 
